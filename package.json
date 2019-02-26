@@ -1,0 +1,23 @@
+{
+  "name": "moneyquest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inonso/moneyquest.git"
+  },
+  "homepage": "https://inonso.github.io/moneyquest",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inonso/moneyquest/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
