@@ -1,5 +1,5 @@
 {
-  "name": "moneyquest",
+  "name": "sites",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inonso/moneyquest.git"
+    "url": "git+https://github.com/inonso/sites.git"
   },
-  "homepage": "https://inonso.github.io/moneyquest",
+  "homepage": "https://inonso.github.io/sites",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/inonso/moneyquest/issues"
+    "url": "https://github.com/inonso/sites/issues"
   },
   "dependencies": {
     "gh-pages": "^2.0.1"
