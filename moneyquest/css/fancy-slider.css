@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 /* fancy slider css
 ================================== */
 .fnc {
@@ -317,6 +308,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    display: none;
   }
   .fnc-nav__bgs {
     z-index: -1;
@@ -526,6 +518,10 @@
   .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
     background-image: url(../img/sl-3.png);
   }
+  .example-slider .fnc-slide-4 .fnc-slide__inner,
+  .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
+    background-image: url(../img/sl-4.jpg);
+  }
   .example-slider .fnc-slide-3 .fnc-slide__inner:before {
     content: "";
     position: absolute;
@@ -535,10 +531,7 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
   }
-  .example-slider .fnc-slide-4 .fnc-slide__inner,
-  .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-    background-image: url();
-  }
+ 
   .example-slider .fnc-slide-4 .fnc-slide__inner:before {
     content: "";
     position: absolute;
@@ -820,3 +813,30 @@
   .carousel-caption button {
     animation-delay: 3s;
   }
+
+
+  @media(max-width:575px){
+ 
+    .fnc-slide__content{
+        left: 10%;
+    }
+    .fnc-slide__heading-line{
+        font-size: 28px;
+        word-spacing: 0;
+    }
+    .demo-cont, .fnc-slider{
+        height: 400px;
+    }
+    
+ }
+
+ @media(max-width:767px){
+   .fnc-nav{
+     display: none;
+   }
+ }
+ @media (min-width:768px) and (max-width:992px){
+  .fnc-slide__content{
+    left: 15%;
+  }
+ }
