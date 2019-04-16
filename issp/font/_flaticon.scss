@@ -1,0 +1,124 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 10/04/2019 12:44
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-islamic-ramadan:before { content: "\f100"; }
+.flaticon-muslim-man-praying:before { content: "\f101"; }
+.flaticon-donation:before { content: "\f102"; }
+.flaticon-select:before { content: "\f103"; }
+.flaticon-old-typical-phone:before { content: "\f104"; }
+.flaticon-placeholder-filled-point:before { content: "\f105"; }
+.flaticon-close-envelope:before { content: "\f106"; }
+.flaticon-facebook-logo:before { content: "\f107"; }
+.flaticon-youtube-symbol:before { content: "\f108"; }
+.flaticon-google-plus-social-logotype:before { content: "\f109"; }
+.flaticon-linkedin-logo:before { content: "\f10a"; }
+.flaticon-twitter-social-logotype:before { content: "\f10b"; }
+.flaticon-pinterest-social-logo:before { content: "\f10c"; }
+.flaticon-instagram-social-network-logo-of-photo-camera:before { content: "\f10d"; }
+.flaticon-calendar-with-a-clock-time-tools:before { content: "\f10e"; }
+.flaticon-right-arrow:before { content: "\f10f"; }
+.flaticon-left-arrow:before { content: "\f110"; }
+.flaticon-down-arrow:before { content: "\f111"; }
+.flaticon-edit:before { content: "\f112"; }
+.flaticon-target:before { content: "\f113"; }
+.flaticon-clip:before { content: "\f114"; }
+.flaticon-gallery:before { content: "\f115"; }
+.flaticon-moon:before { content: "\f116"; }
+.flaticon-sun:before { content: "\f117"; }
+.flaticon-timer:before { content: "\f118"; }
+.flaticon-islam:before { content: "\f119"; }
+.flaticon-mosque:before { content: "\f11a"; }
+.flaticon-mosque-1:before { content: "\f11b"; }
+.flaticon-kaaba-mecca:before { content: "\f11c"; }
+.flaticon-reading-quran:before { content: "\f11d"; }
+.flaticon-kaaba:before { content: "\f11e"; }
+.flaticon-kaaba-1:before { content: "\f11f"; }
+.flaticon-allah-word:before { content: "\f120"; }
+.flaticon-badshahi-mosque:before { content: "\f121"; }
+.flaticon-islamic-mosque:before { content: "\f122"; }
+.flaticon-islamic-lantern:before { content: "\f123"; }
+.flaticon-window:before { content: "\f124"; }
+.flaticon-halal-sign:before { content: "\f125"; }
+.flaticon-islam-1:before { content: "\f126"; }
+.flaticon-islam-2:before { content: "\f127"; }
+.flaticon-pray:before { content: "\f128"; }
+.flaticon-ramadan-fasting:before { content: "\f129"; }
+    
+    $font-Flaticon-islamic-ramadan: "\f100";
+    $font-Flaticon-muslim-man-praying: "\f101";
+    $font-Flaticon-donation: "\f102";
+    $font-Flaticon-select: "\f103";
+    $font-Flaticon-old-typical-phone: "\f104";
+    $font-Flaticon-placeholder-filled-point: "\f105";
+    $font-Flaticon-close-envelope: "\f106";
+    $font-Flaticon-facebook-logo: "\f107";
+    $font-Flaticon-youtube-symbol: "\f108";
+    $font-Flaticon-google-plus-social-logotype: "\f109";
+    $font-Flaticon-linkedin-logo: "\f10a";
+    $font-Flaticon-twitter-social-logotype: "\f10b";
+    $font-Flaticon-pinterest-social-logo: "\f10c";
+    $font-Flaticon-instagram-social-network-logo-of-photo-camera: "\f10d";
+    $font-Flaticon-calendar-with-a-clock-time-tools: "\f10e";
+    $font-Flaticon-right-arrow: "\f10f";
+    $font-Flaticon-left-arrow: "\f110";
+    $font-Flaticon-down-arrow: "\f111";
+    $font-Flaticon-edit: "\f112";
+    $font-Flaticon-target: "\f113";
+    $font-Flaticon-clip: "\f114";
+    $font-Flaticon-gallery: "\f115";
+    $font-Flaticon-moon: "\f116";
+    $font-Flaticon-sun: "\f117";
+    $font-Flaticon-timer: "\f118";
+    $font-Flaticon-islam: "\f119";
+    $font-Flaticon-mosque: "\f11a";
+    $font-Flaticon-mosque-1: "\f11b";
+    $font-Flaticon-kaaba-mecca: "\f11c";
+    $font-Flaticon-reading-quran: "\f11d";
+    $font-Flaticon-kaaba: "\f11e";
+    $font-Flaticon-kaaba-1: "\f11f";
+    $font-Flaticon-allah-word: "\f120";
+    $font-Flaticon-badshahi-mosque: "\f121";
+    $font-Flaticon-islamic-mosque: "\f122";
+    $font-Flaticon-islamic-lantern: "\f123";
+    $font-Flaticon-window: "\f124";
+    $font-Flaticon-halal-sign: "\f125";
+    $font-Flaticon-islam-1: "\f126";
+    $font-Flaticon-islam-2: "\f127";
+    $font-Flaticon-pray: "\f128";
+    $font-Flaticon-ramadan-fasting: "\f129";

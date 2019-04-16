@@ -1,0 +1,1079 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900');
+:root{
+    --body-bg:#fff;
+    --main-color:#34b523;
+    --secondary-color:#cf883b;
+    --d-secondary-color:#916032;
+    --heading:#1a2229;
+    --white:#ffffff;
+    --para:#717171;    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    position: relative;
+    background:var(--body-bg);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.index-container{
+    display: grid;   
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'lt ht ht ht ht ht'
+    'hd hd hd hd hd hd'
+    'sec1 sec1 sec1 sec1 sec1 sec1'
+    'sec2 sec2 sec3 sec3 sec3 sec3'
+    'sec4 sec4 sec4 sec4 sec4 sec4'
+    '. sec5 sec5 sec5 sec5 .'
+    'sec6 sec6 sec6 sec6 sec6 sec6'
+    'sec7 sec7 sec7 sec7 sec7 sec7'
+    '. sec8 sec8 sec8 sec8 .'
+    'sl sl sl sl sl sl'
+    'main main main main main main'
+    'lsb lsb lsb lsb lsb lsb' 
+
+    '. ft ft ft ft .'
+}
+.logo-top{
+    grid-area: lt;
+    padding: 0 50px;
+    background: url(../img/regal.png) repeat;
+}
+.head-time{
+    grid-area: ht;
+    display: grid;    
+    padding-right: 50px;
+    align-items: center;
+    justify-content:flex-end;
+    grid-column-gap: 10px;
+    grid-template-columns:repeat(auto-fit, 85px);
+    background: url(../img/regal.png) repeat;
+}
+
+.header{
+    grid-area: hd;
+    background: var(--white);
+}
+.sec-1.slider{
+    grid-area: sec1;
+    position: relative;
+    margin-bottom: 4em;
+}
+.sec-2{
+    grid-area: sec2;
+    background: url(../img/islamicday.png) center no-repeat;
+}
+.sec-3{
+    grid-area: sec3;   
+}
+.sec-4{
+    grid-area: sec4;   
+}
+.sec-5{
+    grid-area: sec5;   
+}
+.sec-6{
+    grid-area: sec6;   
+}
+.sec-7{
+    grid-area: sec7;   
+}
+.sec-8{
+    grid-area: sec8;   
+}
+.footer{
+    grid-area: ft;
+}
+.inner-slider{
+    grid-area: sl;
+}
+.main{
+    grid-area: main;
+    
+}
+.right-sidebar{
+    grid-area: rsb;
+}
+.left-sidebar{
+    grid-area: lsb;
+    grid-row: 4;
+}
+.t-circle{
+    width: 85px;
+    height: 85px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background: var(--white);
+}
+.t-circle p{
+    margin:-2px 0;
+    font-size: .875em;    
+    text-align: center;
+    color: var(--secondary-color);
+}
+.bg-light{
+    background: transparent !important;
+}
+.header .navbar-brand{
+    display: none;
+}
+/*  slider section /section-1
+=================================== */
+.sec-1.slider::before{
+    content: '';
+    height: 20px;
+    width: 100%;
+    background: url(../img/halfcircle_pattern.png) repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    
+}
+/*  islamic day section /section-2
+=================================== */
+.i-day-wrap{
+    display: grid;   
+    padding: 50px;
+}
+.i-day-wrap h3{
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+}
+.day-display{
+    display: grid;
+    width: calc(100% - 40%);
+    grid-template-columns: 60px auto 20px;
+    margin:2em auto;
+    padding: .5em;
+    background: var(--white);
+    border-radius: .4em;
+    
+}
+.day-display .date_show{   
+    display: grid;
+    align-content: center;
+    text-align: center;
+    padding-right: 10px;
+    color: var(--main-color);
+    border-right: 1px solid var(--secondary-color);
+}
+.day-display .date_show p{
+    font-size: 1.5em;
+    margin:0px 0;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+}
+.day-display .date_show p + p{
+    margin:-5px 0;
+}
+.day-display .holiday{
+    display: grid;
+    align-items: center;
+    padding:  10px;
+}
+.day-display .holiday h4{
+    margin: 0;
+}
+.holiday-info{
+    width: calc(100% - 40%);
+    margin: auto;
+}
+.holiday-info p{
+    margin: 1em 0;
+    text-align: center;
+    color: var(--white);
+}
+
+/* Heading  font 
+===============================/ */
+h1, h2, h3, h4, h5{
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+}
+.heading{
+    margin: 4em auto;
+}
+.heading h1{
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.heading h1::before{
+    content: '';
+    height: 30px;
+    width: 100%;
+    background: url(../img/title-border.png) center no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+.grid-card{
+    display: grid;
+    border: 1px solid #cfcfcf;
+}
+.grid-card-avtar{
+    margin: 0;
+    min-height: 190px;
+}
+.grid-card-avtar img{
+    object-fit: cover;
+    width: 100%;
+}
+.grid-card-body {
+    padding: 1.5em 1em;
+}
+/*  welcome section /section-3
+=================================== */
+.menu .dropdown-item{
+    color: var(--para);
+    font-size: .875em;
+}
+.menu .navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link{
+    color: var(--main-color);
+}
+.wlcm-wrap{
+    min-height: 400px;
+     padding:0 50px 50px 50px;
+     background: #fff url(../img/white-mosque.jpg) right center no-repeat;
+     background-size: contain;
+
+}
+.wlcm-wrap .content{
+    width: calc(100% - 20%);
+}
+.wlcm-wrap h2{
+    color: var(--d-secondary-color);
+}
+.wlcm-wrap p{
+    color: var(--para);
+}
+/*  islamic pillers section /section-4
+========================================*/
+.piller-wrap{
+    display: grid;
+    align-items: center;
+    align-content: center;       
+    width: 100%;
+    padding: 4em;
+    min-height: 400px;
+    background: url(../img/inner-mosque.jpg) top center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.piller-wrap::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 0;
+}
+.piller-wrap h1{
+    color: var(--white);
+    text-align: center;
+    z-index: 1;
+    margin: 2em ;
+}
+.pillers-box{
+    display: grid;
+    width: calc(100% - 10%);
+    margin:2em  auto;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.pillers{
+    display: grid;
+    align-items: center;
+    justify-content: center;    
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1em;
+    border-radius: 50%;
+    background: rgba(207, 136, 59, 0.5);
+    border: 2px solid var(--white);
+    z-index: 10;
+}
+.piller-cover{
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.piller-cover h4{
+    font-size: 1em;
+    color: var(--white);
+}
+.piller-cover p{
+    color: var(--main-color);
+}
+.pillers [class*="flaticon-"]:before{
+    font-size: 4em;
+    color: var(--white);
+}
+/* our team section /section-5
+========================================*/
+.team-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25% , 1fr));
+    grid-gap: 20px;
+    padding:0 0 3em 0;
+}
+.team-wrap .grid-card-body h4{
+    text-align: center;
+    font-size: 1.125em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.team-wrap .grid-card-body p{
+    text-align: center;
+    color: var(--para);
+    margin: 0;
+}
+/* our imam section /section-6
+========================================*/
+
+.imam-wrap{
+    display: grid;
+    align-items: center;
+    min-height: 400px;
+    background: #fefaf5;
+    position: relative;
+    padding-bottom: 4em;
+}
+.imam-wrap::before, .imam-wrap::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;    
+    background-size: contain;
+}
+.imam-wrap::before{
+    background: url(../img/floral-l.png) top left no-repeat;
+}
+.imam-wrap::after{
+    background: url(../img/floral-r.png) top right no-repeat;
+}
+
+.imam-card{
+    width: calc(100% - 20%);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: auto;
+    background: var(--white);
+    box-shadow: 0 6px 12px rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10;
+}
+.imam-card-avtar{
+    margin: 0;
+    grid-column: 1/5;
+    position: relative;
+}
+.imam-card-avtar img{
+    width: 100%;
+    object-fit: cover;
+}
+.imam-card-body{    
+    grid-column: 5/13;   
+    padding: 1em;
+}
+.imam-card-body p{
+    color: var(--para);
+}
+.imam-card-body p b{
+    position: relative;
+    margin-right: 10px;
+}
+.imam-card-body p b::after{
+    content: ':';
+}
+
+/* praye week section /section-7
+========================================*/
+
+.week-wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto;
+    background: linear-gradient( to top right, #02971b, #028117);
+    background: -moz-linear-gradient( to top right, #02971b, #028117);
+    min-height: 300px;
+}
+.pray-week-day{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 1px;
+}
+.day-name{
+    display: grid;
+    align-items: center;
+    color: var(--white);
+    justify-content: center;
+    background: rgba(0,0,0,.1);
+    font-size: 1.25em;
+}
+.date-wrap{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);    
+    grid-gap: 1px;
+    padding-bottom: 1px;
+}
+.day-date{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto;
+    background: #fff;
+    position: relative;
+}
+.g-date{
+    font-size: 2em;
+    font-weight: 600;
+    color:var(--secondary-color);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.h-date{
+    font-size: 2em;
+    font-weight: 600;
+    color:var(--main-color);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.azan-title{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    color: var(--main-color);
+    font-size: .875em;
+}
+.iqama-title{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3;
+    color: var(--main-color);
+    font-size: .875em;
+}
+.nmaz_time{
+    display: grid;
+    grid-column: 2/4;
+    grid-template-columns: 25px 1fr 1fr;
+    min-width: 60px;
+    min-height: 50px;
+    font-size: .875em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.at-name{
+    color: var(--para);
+    font-weight: 300;
+}
+.at-time{
+    color:var(--para);
+    font-size: .85em;
+    border-right: 1px dashed #d9d9d9;
+    
+}
+.jt-time{
+    color:var(--para);
+    font-size: .85em;
+    padding: 0 0 0 5px;
+}
+/* service section /section-8
+========================================*/
+
+.service-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+    grid-gap: 20px;
+}
+
+.service-wrap .grid-card{
+    border-radius: .5em;
+    border: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+.service-wrap .grid-card-avtar img{
+    border-radius: .5em .5em 0 0;
+}
+.service-wrap .grid-card-body{
+    border-radius: .25em;
+}
+.service-wrap .grid-card-body h4{
+    text-align: center;
+    font-size: 1.25em;
+    color: var(--heading);
+}
+
+/* Footer
+========================================*/
+
+.footer-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 40px;
+    margin-top: 4em;
+}
+.f-col{
+    margin: 0;
+}
+.f-col h4{
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+.f-col p{
+    font-size: .875em;
+    color: var(--para);
+}
+.f-col table{
+    width: 100%;
+}
+.f-col table td, .f-col table th{
+    font-size: .875em;
+    color: var(--para);
+}
+.f-col table td:nth-of-type(2){
+    text-align: right;
+}
+.footer-social{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    list-style: none;
+}
+.footer-social [class*="flaticon-"]:before{
+    font-size: 28px;
+}
+.ft-icon a{
+    color:  #909090;
+}
+.ft-icon a:hover{
+    text-decoration: none;
+}
+.f-col h5{
+    position: relative;
+    font-size: .875em;
+    font-weight: 400;
+    margin: 0 0 .7em 0;
+    padding-left: 30px;
+}
+.f-col .phone::before{
+    content: '\f104';
+    font-family: "Flaticon";
+    position: absolute;
+    left: 0px;
+    font-size: 20px;
+    color: #909090;
+}
+.f-col .email::before{
+    content: '\f106';
+    font-family: "Flaticon";
+    position: absolute;
+    left: 0px;
+    font-size: 20px;
+    color: #909090;
+}
+
+.f-col .location::before{
+    content: '\f105';
+    font-family: "Flaticon";
+    position: absolute;
+    left: 0px;
+    font-size: 20px;
+    color: #909090;
+}
+.copywright{
+    text-align: center;
+    display: block;
+    font-size: .775em;
+    margin-bottom: 1em;
+}
+/*================================================
+/
+/ Donation page start here
+/
+==================================================*/
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);   
+    min-height: 200px;
+    /* padding: 0 16.6%; */
+}
+.mi-container{
+    display: grid;
+    grid-template-columns: 68% 28%;
+    grid-column: 2/6;   
+    grid-gap: 4%;
+}
+.inner-slider{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 330px;
+    position: relative;
+    background: linear-gradient(#508429, #296634);
+    overflow: hidden;
+}
+.inner-slider::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    opacity: .5;
+    background: url(../img/mosque-blur.png)  bottom repeat-x;     
+    background-position-y: 90px;
+    filter: drop-shadow(-10px 0 0px rgba(0,0,0,.2));
+    animation: 25s linear 0s normal none infinite running issp;
+    
+}
+@-webkit-keyframes issp{
+    0%{
+        background-position:50% 90px
+    }
+    100%{
+        background-position:0px 90px
+    }
+}
+@-moz-keyframes issp{
+    0%{
+        background-position:50% 90px
+    }
+    100%{
+        background-position:0px 90px
+    }
+}
+@-ms-keyframes issp{
+    0%{
+        background-position:50% 90px
+    }
+    100%{
+        background-position:0px 90px
+    }
+}
+@keyframes issp{
+    0%{
+        background-position:50% 90px
+    }
+    100%{
+        background-position:0px 90px
+    }
+}
+.inner-slider h1{
+    font-size: 3em;
+    position: relative;
+    color: var(--white);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.inner-slider h2{
+    font-size: 2.125em;
+    text-align: center;
+    position: relative;
+    color: var(--white);
+    letter-spacing: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.donate-form{
+    margin: 0;    
+}
+.donate-form .fomr-group{
+    margin-bottom: .5em;
+}
+.donate-form .form-control{
+    border-radius: .1em;
+}
+.donate-form label{
+    font-size: .875em;
+    margin: 0;
+    color: var(--para);
+}
+.donate-form label sup{
+    color:red;
+}
+.sub-heading{
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 2em;
+}
+.sub-heading h4{
+    font-size: 1.125em;
+    color: var(--secondary-color);
+    margin: 0 0 .3em 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn-main{
+    padding: .375em 1em;
+    border-radius: .1em;
+    border: 0;
+    color: var(--white);
+    background:var(--main-color);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    z-index: 1;
+    font-weight: 600;
+    line-height: 2;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-transition: all 0.3s; 
+    -moz-transition: all 0.3s;
+     transition: all 0.3s; 
+}
+.btn-main::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../img/mosuqe-btn.png)  center no-repeat;
+    background-size: cover;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: .1;
+    
+}
+.btn-main::after{
+    content: '';
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    
+}
+.btn-main:hover{
+    color: var(--main-color);
+}
+.btn-main:hover::after{
+    height: 260%;
+    opacity: 1;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.side-news{
+    margin: 0;
+}
+.side-news .grid-card{
+    border: 0;
+    margin-bottom: 1em;
+}
+.side-news .grid-card-avtar{
+    height: 160px;
+    min-height: inherit;
+    margin: 0 0 .5em 0;
+    position: relative;
+}
+.side-news .img-resize{
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    object-fit: cover;    
+}
+
+.side-news .grid-card-body{
+    padding: 0
+}
+.side-news .grid-card-body h4{
+    font-size: .875em;
+    margin: 0;
+    color: var(--para);
+}
+.side-news .grid-card-body p{
+    font-size: .875em;
+    color: var(--para);
+    margin: 0;
+}
+.side-news .grid-card-body a{
+    font-size: .875em;
+    color: var(--main-color);
+    margin: 0;
+}
+/*================================================
+/
+/ Event page start here
+/
+==================================================*/
+
+.mi-container.one-col{
+ grid-template-columns: 1fr;
+}
+.event-wrap .sub-heading h4{
+    text-align: center;
+}
+.uc-event{
+    width: calc(100% - 20%);
+    min-height: 100px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    margin:0 auto 4em;
+}
+.uc-event .testim{
+    position: relative;
+    -webkit-transform: translatey(0%);
+    -moz-transform: translatey(0%);
+    -ms-transform: translatey(0%);
+    -o-transform: translatey(0%);
+    transform: translatey(0%);
+}
+.uc-event .testim .wrap{
+    padding: 10px;
+}
+.uc-event .cont{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.uc-event .testim .cont > div{
+    display: grid;
+    grid-template-columns: 100px 1fr 40px;
+    padding: 0;
+    align-items: center;
+}
+.uc-event .testim .cont > div p{
+    font-size: .875em;
+    text-align: left;
+    margin-left: 10px;
+}
+.uc-event .testim .cont div h2{
+    color: var(--heading);
+    margin: 0;
+    text-align: left;
+    margin-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.uc-event .testim .dots{
+    display: none;
+}
+.uc-event .testim .cont div .img img{
+    border-radius: 0;
+    height: auto;
+}
+.uc-event .testim .arrow.left{
+    
+    top: 15px;
+    left: auto;
+    right:10px;
+}
+.uc-event .testim .arrow.right{
+    
+    bottom: -10px;
+    left: auto;
+    right:10px;
+}
+.uc-event .testim .arrow{
+    font-size: 1em;
+    top: auto;
+}
+
+.even-wrap{
+    display: grid;    
+    grid-template-columns: 29% 69%;
+    grid-gap: 2%;
+    border-bottom:1px solid #e9e9e9;
+  
+    margin-bottom: 2em;
+}
+.event-image{
+    margin: 0;
+    position: relative;
+}
+.img-responsive{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.event-detail-wrap{
+    margin: 0;
+}
+.event-detail-wrap h5{
+    font-size: 1em;
+    padding-left: 1.5em;
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+.event-detail-wrap h2{
+    font-size: 1.25em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.event-detail-wrap p{
+    font-size: .875em;
+    color: var(--para);
+}
+.e-time-icon::before{
+ content: '\f10e';
+ font-family: Flaticon;
+ left: 0px;
+ position: absolute;
+ color: var(--main-color);
+}
+/*================================================
+/
+/ Islamic calendar page start here
+/
+==================================================*/
+
+.index-container.calendar{
+    display: grid;
+}
+.index-container.calendar .inner-slider{
+    grid-row: 3;
+}
+.calendar .sec-7{
+    grid-row: 5;
+    background: #f6f6f6;
+}
+.calendar .week-wrap{
+    background: var(--white);
+}
+.calendar .pray-week-day{
+    background: linear-gradient(#4cb71a, #38a825);
+}
+.calendar .date-wrap{
+    grid-gap: 0;
+    background: var(--white);
+}
+.calendar .day-date{
+    border: 1px solid green;
+}
+.index-container.calendar .btn-main{
+    width: auto;
+    margin: 2em auto;
+    display: inline-block;
+}
+.calendar .day-date.disable{
+    opacity: .4;
+    pointer-events: none;
+}
+.calendar .day-date:nth-of-type(1),
+.calendar .day-date:nth-of-type(2),
+.calendar .day-date:nth-of-type(3),
+.calendar .day-date:nth-of-type(4),
+.calendar .day-date:nth-of-type(5),
+.calendar .day-date:nth-of-type(6),
+.calendar .day-date:nth-of-type(8),
+.calendar .day-date:nth-of-type(9),
+.calendar .day-date:nth-of-type(10),
+.calendar .day-date:nth-of-type(11),
+.calendar .day-date:nth-of-type(12),
+.calendar .day-date:nth-of-type(13),
+.calendar .day-date:nth-of-type(15),
+.calendar .day-date:nth-of-type(16),
+.calendar .day-date:nth-of-type(17),
+.calendar .day-date:nth-of-type(18),
+.calendar .day-date:nth-of-type(19),
+.calendar .day-date:nth-of-type(20),
+.calendar .day-date:nth-of-type(22),
+.calendar .day-date:nth-of-type(23),
+.calendar .day-date:nth-of-type(24),
+.calendar .day-date:nth-of-type(25),
+.calendar .day-date:nth-of-type(26),
+.calendar .day-date:nth-of-type(27){    
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.calendar .day-date:nth-of-type(7),
+.calendar .day-date:nth-of-type(14),
+.calendar .day-date:nth-of-type(21),
+.calendar .day-date:nth-of-type(28){
+    border-bottom: 0;
+}
+
+.calendar .day-date:nth-of-type(29),
+.calendar .day-date:nth-of-type(30),
+.calendar .day-date:nth-of-type(31),
+.calendar .day-date:nth-of-type(32),
+.calendar .day-date:nth-of-type(33),
+.calendar .day-date:nth-of-type(34){
+    border-right: 0;
+}
+
+/*================================================
+/
+/ Contact page start here
+/
+==================================================*/
+
+.contact-wrap{
+    margin: 0;
+}
+.contact-wrap h4{
+    font-size: 1.125em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contact-wrap p{
+    font-size: .875em;
+    color: var(--para);
+}
+
+.contact-form{
+    margin: 2em 0;
+}
+.contact-form .fomr-group{
+    margin-bottom: .5em;
+}
+.contact-form .form-control{
+    border-radius: .1em;
+}
+.contact-form label{
+    font-size: .875em;
+    margin: 0;
+    color: var(--para);
+}
+.textarea-height{
+    min-height: 200px;
+}
+.contact-wrap .btn-main{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: .325em 1em .125em 1em;
+    line-height: 1.5;
+}
