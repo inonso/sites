@@ -134,13 +134,8 @@ header .navbar-light .navbar-nav .show>.nav-link{
     font-size: .875em;
     font-weight: 300;
 }
-.row.equal-height [class*="col"] {
-    
-    border-left: 1px solid #eee;
-}
-.row.equal-height [class*="col"]:last-child{
-    border-right: 1px solid #eee;
-}
+
+
 .row.equal-row [class*="col-"]{
     margin-bottom: 1em;
 }
@@ -157,6 +152,7 @@ header .navbar-light .navbar-nav .show>.nav-link{
 .hloan-border{
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    display: none;
 }
 .highlight-loan p{
     margin: 0;
@@ -209,10 +205,16 @@ header .navbar-light .navbar-nav .show>.nav-link{
 .icon_box {
     padding: 20px 0 0;
     position: relative;
+   
 }
 .icon_box.style2 .icon {
     border: 2px solid transparent;
-    display: inline-block;
+    display: block;
+   
+}
+.icon_box.style2 .icon img{
+    width: 60px;
+    margin-bottom: 1em;
 }
 .icon_box .icon {
     margin-top: 6px;
@@ -291,6 +293,26 @@ header .navbar-light .navbar-nav .show>.nav-link{
     flex-wrap: wrap;
     align-items: center;
 
+}
+.highlight-loan{
+    width: 100%;
+}
+.highlight-loan .media{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 65px 1fr;
+}
+.highlight-loan .media img{
+    width: 50px;
+}
+.equal-height{
+    display: grid;
+    grid-gap: .3em;
+    grid-template-columns: repeat(auto-fit, minmax(16em,1fr));
+}
+.equal-height .col-sm-3{
+    max-width: inherit;
+    border: 1px solid #eee;
 }
 /* counter css
 ========================= */
