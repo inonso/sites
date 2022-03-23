@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="result" type="text" placeholder="Answer" /> <br />
+    <input id="num1" type="text" placeholder="First Number" /> <br />
+    <input id="num2" type="text" placeholder="Second Number" /> <br />
+    <button onclick="handleAddClick();">+</button>
+    <button onclick="handleSubtractClick();">-</button>
+    <button onclick="handleMultiplyClick();">*</button>
+    <button onclick="handleDivideClick();">/</button>
+    <button onclick="handleClear();">Clear</button>
+    <script>
+        let result = document.getElementById("result")
+        let num1 = document.getElementById("num1")
+        let num2 = document.getElementById("num2")
+
+        function handleAddClick() {
+             result.value = parseInt(num1.value) + parseInt(num2.value)
+        }
+        
+        function handleSubtractClick() {
+            result.value = parseInt(num1.value) - parseInt(num2.value)
+        }
+
+        function handleMultiplyClick() {
+            result.value = parseInt(num1.value) * parseInt(num2.value)
+        }
+
+        function handleDivideClick() {
+            result.value = parseInt(num1.value) / parseInt(num2.value)
+        }
+
+        function handleClear() {
+            result.value = ""
+            num1.value = ""
+            num2.value = ""
+        }
+    </script>
+</body>
+</html>
